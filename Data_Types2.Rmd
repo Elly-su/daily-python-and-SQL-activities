@@ -1,0 +1,61 @@
+---
+title: "Data_Types"
+author: "Rebeccah Akinyi C029/401324/2023"
+date: "`r Sys.Date()`"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup2, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+```{r assignment, echo=TRUE}
+
+
+# Data Types in R - Annotated Code Report
+#In R, various data types are available to handle different kinds of data. Here is an overview with example, code and comments explaining each type.
+
+## 1. Numeric
+# Assign a numeric value to a variable
+a<- 42 # 'a' stores a numeric value (double by default).
+
+## 2. Integer
+# Assign an integer value using the 'L' suffix
+b<- 5L # 'b' is explicitly set as an integer.
+
+## 3. Character (String)
+# Assign a character string to a variable
+char<- "Hello, World!" # 'char' is a string containing text.
+
+## 4. Logical (Boolean)
+# Assign a logical value (TRUE or FALSE)
+c<- TRUE # 'c' holds a boolean value of TRUE.
+
+## 5. Complex
+# Create a complex number
+s<- 4 + 3i # 's' holds a complex number (4 + 3i).
+
+## 6. Vector
+# Create a vector with different elements of the same type
+v<- c(1, 2, 3, 4, 5) # 'v' is a numeric vector.
+
+## 7. List
+# Create a list that can contain different data types
+p<- list(42, "text", TRUE, 3 + 2i) # 'p' contains multiple data types.
+
+## 8. Factor
+# Create a factor for categorical data
+q<- factor(c("Low", "Medium", "High", "Medium")) # 'q' is a factor with levels.
+
+
+## 9. Matrix
+# Create a matrix with numeric data
+m<- matrix(1:9, nrow=3, ncol=3) # 'mat' is a 3x3 numeric matrix.
+
+## Summary
+#Each of these examples demonstrates the basic data types in R. Understanding these data types is essential for working effectively with R.
+
+

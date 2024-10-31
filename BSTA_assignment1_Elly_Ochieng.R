@@ -1,0 +1,76 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+#Elly Ochieng' Kimbero
+#C029/401370/2023
+#BSC Data Science
+```{r echo=TRUE}
+```
+# 1. Distance between two points
+x1 <- 2
+y1 <- 5
+x2 <- 7
+y2 <- 8
+
+distance <- sqrt((x2 - x1)^2 + (y2 - y1)^2)
+print(distance)
+# 2. Expression evaluation
+x <- 1
+expression_result <- 5 + 4 * (x - 2 / x)
+print(expression_result)
+# 3. Conditional expression and calculations
+x <- -8
+y <- -4
+
+if (x < -7.5 & y < -3) {
+  # Arithmetic operations
+  sum_xy <- x + y
+  product_xy <- x * y
+  
+  # Relational comparisons
+  is_x_greater_than_y <- x > y
+  is_x_less_than_or_equal_to_y <- x <= y
+  
+  # Mathematical functions
+  sqrt_x <- sqrt(abs(x))  # Handle negative numbers
+  log_x <- log(abs(x))
+  exp_x <- exp(x)
+  
+  print(sum_xy)
+  print(product_xy)
+  print(is_x_greater_than_y)
+  print(is_x_less_than_or_equal_to_y)
+  print(sqrt_x)
+  print(log_x)
+  print(exp_x)
+}
+# 4. Rep function examples
+# (a) Repeating elements with specified times
+result_a <- rep(c(2, 3, 5), times = 4:2)
+print(result_a)
+
+# (b) Repeating each element a fixed number of times
+result_b <- rep(c(4, 3, 2), each = 4)
+print(result_b)
+
+# (c) Creating a vector of a specific length
+result_c <- rep(c(3, 1, 1, 5, 7), length.out = 50)
+print(result_c)
+
+# (d) Repeating each element a fixed number of times (alternative method)
+result_d <- c(rep(3, 4), rep(1, 4), rep(1, 4), rep(5, 4), rep(7, 4))
+print(result_d)
+# 5. Interest calculation
+# (a) Interest on $1000 at 7.5% for 5 years
+interest_7_5 <- 1000 * ((1 + 0.075)^5 - 1)
+print(interest_7_5)
+
+# (b) Interest on $1000 at 3.5% for 5 years
+interest_3_5 <- 1000 * ((1 + 0.035)^5 - 1)
+print(interest_3_5)
+
+# (c) Interest for 10 years at 7.5%
+interest_seq <- 1000 * ((1 + 0.075)^seq(1, 10) - 1)
+print(interest_seq)

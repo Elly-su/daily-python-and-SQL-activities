@@ -1,0 +1,98 @@
+---
+title: "Data Types in R"
+author: "RISPER MUMBI MAINA"
+date: "`r Sys.Date()`"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)  # or echo = FALSE
+```
+##R Markdown
+
+##Data Types in R
+```{r all-in-one, echo=TRUE, message=TRUE, warning=TRUE}
+# Checking atomic data types
+is.atomic(3)        # TRUE
+is.atomic("R CODER") # TRUE
+
+# Checking data types
+typeof(1)      # "double"
+class(2)       # "numeric"
+storage.mode(3) # "double"
+mode(4)        # "numeric"
+str(5)         # num 5
+
+# Numeric data types
+typeof(2)      # "double"
+typeof(Inf)    # "double"
+typeof(-Inf)   # "double"
+typeof(NaN)    # "double"
+typeof(3.12e3) # "double"
+typeof(0xbade) # "double"
+is.double(2)   # TRUE
+is.double(2.8) # TRUE
+
+# Integer data type
+y <- 2L
+typeof(y)       # "integer"
+is.integer(3)   # FALSE
+is.integer(3L)  # TRUE
+
+# Logical data type
+t <- TRUE
+f <- FALSE
+n <- NA
+typeof(t)    # "logical"
+typeof(f)    # "logical"
+typeof(n)    # "logical"
+is.logical(T) # TRUE
+is.logical(TRUE) # TRUE
+
+# Complex data type
+z <- 1 + 3i
+typeof(z)      # "complex"
+is.complex(z)  # TRUE
+
+# Character data type
+character <- "a"
+typeof(character)      # "character"
+is.character(character) # TRUE
+typeof('R CODER')      # "character"
+typeof("R CODER")      # "character"
+nchar("A string")      # 8
+
+# Raw data type
+a <- charToRaw("R CODER")
+typeof(a)     # "raw"
+b <- intToBits(3L)
+typeof(b)     # "raw"
+is.raw(b)     # TRUE
+
+# Date and Time data type
+date <- as.Date("2023-10-30")
+format(date, "%A %B %d %Y")
+
+# Data type coercion
+a <- 3
+typeof(a)    # "double"
+a <- as.integer(a)
+typeof(a)    # "integer"
+
+b <- TRUE
+b <- as.numeric(b)
+b            # 1
+
+c <- FALSE
+c <- as.numeric(c)
+c            # 0
+
+d <- TRUE
+d <- as.character(d)
+d            # "TRUE"
+
+# Invalid coercion example
+as.double("R CODER")  # Outputs: NA
+

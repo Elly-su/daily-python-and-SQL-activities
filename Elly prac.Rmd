@@ -1,0 +1,73 @@
+---
+title: "Practical Activity 1"
+author: "Elly Ochieng K'"
+date: "`r Sys.Date()`"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r assignment, echo=TRUE}
+## R Markdown
+# Calculate distance between two points
+x1 <- 2
+y1 <- 5
+x2 <- 7
+y2 <- 8
+
+distance <- sqrt((x2 - x1)^2 + (y2 - y1)^2)
+print(distance)
+
+# Evaluate an expression
+x <- 1
+expression_result <- 5 + 4 * (x - 2 / x)
+print(expression_result)
+
+# Conditional expressions and calculations
+x <- 7.5
+y <- 3
+
+# Arithmetic operations
+sum_xy <- x + y
+product_xy <- x * y
+
+# Relational comparisons
+is_x_greater_than_y <- x > y
+is_x_less_than_or_equal_to_y <- x <= y
+
+# Mathematical functions
+sqrt_x <- sqrt(abs(x))
+log_x <- log(abs(x))
+exp_x <- exp(x)
+
+print(sum_xy)
+print(product_xy)
+print(is_x_greater_than_y)
+print(is_x_less_than_or_equal_to_y)
+print(sqrt_x)
+print(log_x)
+print(exp_x)
+
+# Rep function examples
+result_a <- rep(c(2, 3, 5), times = 4:2)
+result_b <- rep(c(4, 3, 2), each = 4)
+result_c <- rep(c(3, 1, 1, 5, 7), length.out = 50)
+result_d <- c(rep(3, 4), rep(1, 4), rep(1, 4), rep(5, 4), rep(7, 4))
+
+print(result_a)
+print(result_b)
+print(result_c)
+print(result_d)
+
+# Interest calculations
+interest_7_5 <- 1000 * ((1 + 0.075)^5 - 1)
+interest_3_5 <- 1000 * ((1 + 0.035)^5 - 1)
+interest_seq <- 1000 * ((1 + 0.075)^seq(1, 10) - 1)
+
+print(interest_7_5)
+print(interest_3_5)
+print(interest_seq)
+```
