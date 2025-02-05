@@ -27,7 +27,6 @@ a = "Hello"
 b = "World" 
 c = a +" "+ b
 print(c)
-
 #fstrings
 age = 36
 txt = "My name is John, and I am {}"
@@ -37,3 +36,5 @@ price= 59
 txt= f"The price is {price}"
 print(txt)
 txt =f"The price is {price:.2f}"
+txt= f"It is very {'Expensive'if price > 50 else 'Cheap'}"
+print(txt)

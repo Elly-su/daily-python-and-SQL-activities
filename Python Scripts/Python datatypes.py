@@ -45,6 +45,7 @@ txt="The best things in life are free"
 if "free" in txt:
     print("Yes,'free'is present.")
 if "expensive" not in txt:
+    print("'expensive' is not present.")
 #still python datatypes
 x = 1
 y = 2.8
