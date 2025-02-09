@@ -71,3 +71,14 @@ for x in thistuple:
 thistuple = ("apple", "banana", "cherry")
 for i in range(len(thistuple)): #using the range() function to get the index numbers of the tuple
   print(thistuple[i])  
+  
+thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])
+  i = i + 1
+  
+fruits = ("apple", "banana", "cherry")
+mytuple = fruits * 2
+
+print(mytuple)
