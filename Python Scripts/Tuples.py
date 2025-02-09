@@ -48,3 +48,26 @@ thistuple = ("apple", "banana", "cherry")
 y = list(thistuple)
 y.remove("apple")#remove an item from a tuple by converting it into a list
 thistuple = tuple(y)
+
+fruits = ("apple", "banana", "cherry")
+
+(green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+  print(x)
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)): #using the range() function to get the index numbers of the tuple
+  print(thistuple[i])  
