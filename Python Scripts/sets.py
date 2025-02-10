@@ -14,3 +14,11 @@ thisset = {"apple", "banana", "cherry"}
 
 for x in thisset:
   print(x)
+print("banana" in thisset)
+
+#adding items in a set
+thisset = {"apple", "banana", "cherry"}
+
+thisset.add("orange")
+
+print(thisset)
