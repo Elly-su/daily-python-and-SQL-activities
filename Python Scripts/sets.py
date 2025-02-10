@@ -5,3 +5,12 @@ thissset = {"apple", "banana", "cherry"}
 print(thissset)
 #sets are unordered, so the items will appear in a random order
 print(len(thissset))
+print(type(thissset))
+
+thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
+print(thisset)
+
+thisset = {"apple", "banana", "cherry"}
+
+for x in thisset:
+  print(x)
