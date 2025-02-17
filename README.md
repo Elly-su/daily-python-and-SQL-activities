@@ -3,5 +3,7 @@ Welcome to my Daily Python Practice repository! 📌 This is where I document my
 
 ## 📌 What You'll Find Here:
 ✅ Daily Python exercises & coding challenges
+
 ✅ Algorithms, data structures, and problem-solving
+
 ✅ Notes on Python concepts & best practices
